@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Budget Tracker</h1>
+
+        <ul class="transaction-list" id="transactions-container">
+            <!-- Transactions will be dynamically added here -->
+        </ul>
+
+        <div class="form-container">
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <button type="submit">Add Transaction</button>
+            </form>
+        </div>
+
+        <p class="balance" id="balance">Balance: $0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
