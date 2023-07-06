@@ -6,11 +6,11 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #F4F4F4;
+  background-color: #f9f9f9;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -29,7 +29,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -45,15 +45,15 @@ body {
 }
 
 .transaction-item .amount.positive {
-  color: #31A24C;
+  color: #2ecc71;
 }
 
 .transaction-item .amount.negative {
-  color: #E24E4E;
+  color: #e74c3c;
 }
 
 .form-container {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -63,7 +63,15 @@ body {
 .form-container input[type="number"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -72,8 +80,8 @@ body {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #4A90E2;
-  color: #FFF;
+  background-color: #3498db;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -85,4 +93,33 @@ body {
   font-weight: bold;
   color: #000;
   margin-bottom: 20px;
+}
+
+.goal {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.goal .progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.goal .progress-bar {
+  flex-grow: 1;
+  height: 20px;
+  background-color: #e74c3c;
+  border-radius: 5px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.goal .progress-bar-filled {
+  height: 100%;
+  background-color: #2ecc71;
+}
+
+.goal .progress-label {
+  font-weight: bold;
 }

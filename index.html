@@ -18,11 +18,27 @@
             <form id="transaction-form">
                 <input type="text" id="description" placeholder="Description" required>
                 <input type="number" id="amount" placeholder="Amount" required>
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="income">Income</option>
+                    <option value="expenses">Expenses</option>
+                </select>
                 <button type="submit">Add Transaction</button>
             </form>
         </div>
 
-        <p class="balance" id="balance">Balance: $0</p>
+        <div class="balance" id="balance">Balance: $0</div>
+
+        <div class="goal" id="goal-container">
+            <h2>Goal Tracking</h2>
+            <div class="progress">
+                <div class="progress-bar">
+                    <div class="progress-bar-filled" id="goal-progress"></div>
+                </div>
+                <div class="progress-label" id="goal-progress-label">0%</div>
+            </div>
+            <button id="set-goal-button">Set Goal</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
